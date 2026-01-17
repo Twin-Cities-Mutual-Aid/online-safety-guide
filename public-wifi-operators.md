@@ -11,13 +11,12 @@ This guide is intended for operators of small business public Wifi networks—co
 
 ### TL;DR: The 60-Second Security Checklist
 
-If you only have five minutes, ensure these four settings are active on your router to prevent 99% of common attacks:
+If you only have five minutes,  **Post a sign**: "Public Wifi is never 100% safe" and then ensure these four settings are active on your router to prevent 99% of common attacks:
 
-*   **Post a sign**: "Public Wifi is never 100% safe"
-*   **Enable Client Isolation:** Prevent guests from accessing each other's devices.
-*   **Set DNS to [Quad9](https://en.wikipedia.org/wiki/Quad9) (9.9.9.9):** Automatically block malware and phishing sites at the network level.
-*   **Disable WPS:** Turn off "[Wi-Fi Protected Setup](https://en.wikipedia.org/wiki/Wi-Fi_Protected_Setup)" to close a major security hole.
-*   **WPA2-AES or WPA3 Only:** Never use WEP or TKIP encryption.
+1.   **Enable Client Isolation:** Prevent guests from accessing each other's devices.
+2.   **Set DNS to [Quad9](https://en.wikipedia.org/wiki/Quad9) (9.9.9.9):** Automatically block malware and phishing sites at the network level.
+3.   **Disable WPS:** Turn off "[Wi-Fi Protected Setup](https://en.wikipedia.org/wiki/Wi-Fi_Protected_Setup)" to close a major security hole.
+4.   **WPA2-AES or WPA3 Only:** Never use WEP or TKIP encryption.
 
 ### Highlights: What to do and Why
 
@@ -25,7 +24,8 @@ When setting up public Wifi networks, focus on these key outcomes:
 
 *   **Ensure the encryption standard is modern.**
     *   *Goal:* Prevent attackers from easily cracking your network password.
-    *   *Technical Detail:* **Disable WPA1/WEP** and **Disable WPS (Wi-Fi Protected Setup).** These protocols are broken or easily exploited. **[WPA2](https://en.wikipedia.org/wiki/Wi-Fi_Protected_Access#WPA2)**, while standard, was released in 2004 and is aging; use **[WPA3](https://en.wikipedia.org/wiki/Wi-Fi_Protected_Access#WPA3)** if your hardware supports it, or strict WPA2-AES (Personal) at a minimum.
+    *   *Technical Detail:* Require a guest password so that traffic has at least some encryption over the air.
+            Be sure to **Disable WPA1/WEP** and **Disable WPS (Wi-Fi Protected Setup).** These protocols are broken or easily exploited. **[WPA2](https://en.wikipedia.org/wiki/Wi-Fi_Protected_Access#WPA2)**, while standard, was released in 2004 and is aging; use **[WPA3](https://en.wikipedia.org/wiki/Wi-Fi_Protected_Access#WPA3)** if your hardware supports it, or strict WPA2-AES (Personal) at a minimum.
 
 *   **Block known malicious sites and malware.**
     *   *Goal:* Prevent guests from inadvertently accessing sites known to host malware or phishing scams.
@@ -42,6 +42,7 @@ When setting up public Wifi networks, focus on these key outcomes:
 *   **Share the speed fairly.**
     *   *Goal:* Prevent one person downloading a huge file from slowing down the internet for everyone else.
     *   *Technical Detail:* **Enable Rate Limiting.** This ensures fair bandwidth distribution.
+    *   Consider adjusting DHCP lease timeouts to be shorter (hours not days).
 
 ### How to set this up
 
